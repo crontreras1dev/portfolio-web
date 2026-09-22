@@ -21,7 +21,7 @@ const ProjectCard = ({ project }) => {
         {/* <span className="absolute top-3 right-3 bg-bg/50 text-text text-xs px-3 py-1 rounded-full">{ projects[0].status }</span> */}
       </div>
 
-      <div className="text-center px-2 py-4 flex flex-col gap-2">
+      <div className="text-center px-2 py-4 flex flex-col justify-evenly gap-2">
         <h3 className="text-text font-bold text-xl">{ project.name }</h3>
 
         <p className="text-text-secondary text-sm">{ project.description }</p>
@@ -46,7 +46,7 @@ const ProjectCard = ({ project }) => {
               rel="noopener noreferrer"
               className="cursor-pointer hover:underline text-sm text-text"
             >
-              GitHub
+              Repositorio
             </a>
           </span>
 
@@ -56,7 +56,7 @@ const ProjectCard = ({ project }) => {
             rel="noopener noreferrer"
             className="cursor-pointer bg-button-bg hover:bg-button-bg/50 transition-colors text-sm text-text px-4 py-1 rounded-lg"
             >
-            Página
+            UI
           </a>
         </div>
       </div>

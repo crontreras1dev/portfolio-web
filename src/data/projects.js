@@ -31,6 +31,6 @@ export const projects = [
     description: "Catálogo de suplementación deportiva con filtro por categoría",
     tools: ["React", "Tailwindcss 3", "TypeScript"],
     github: "https://github.com/crontreras1dev/catalogo-suprote",
-    page: "https://catalogo-suprote-jreut5ahy-crontreras1s-projects.vercel.app/"
+    page: "https://catalogo-suprote-l5n7.vercel.app/"
   },
 ];

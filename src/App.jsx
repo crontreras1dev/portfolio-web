@@ -1,4 +1,4 @@
-import Profile from "./assets/profile.png";
+import Profile from "./assets/profile.webp";
 import ProjectCard from "./compnents/ProjectCard";
 import GitHub from "../src/assets/icons/github.svg";
 import LinkedIn from "../src/assets/icons/linkedin.svg";

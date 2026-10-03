@@ -1,14 +1,11 @@
-import ProjectCard from "./components/ProjectCard";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
-import Reveal from "./components/Reveal";
-import SectionHeading from "./components/SectionHeading";
 import GitHub from "./assets/icons/github.svg";
 import LinkedIn from "./assets/icons/linkedin.svg";
-import { projects } from "./data/projects";
 import { useLanguage } from "./i18n/LanguageContext";
 import { EMAIL, sendEmail } from "./utils/email";
 
@@ -24,21 +21,7 @@ function App() {
       <main id="top">
         <Hero />
 
-        <section id="projects" className="w-full flex flex-col justify-center items-center py-10">
-          <div className="w-full lg:w-2/3 py-5 flex flex-col justify-center items-center gap-5">
-            <SectionHeading title={ t("projects.title") } subtitle={ t("projects.subtitle") } />
-
-            <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-              {
-                projects.map(project => (
-                  <Reveal key={ project.id } className="h-full">
-                    <ProjectCard project={ project } />
-                  </Reveal>
-                ))
-              }
-            </div>
-          </div>
-        </section>
+        <Projects />
 
         <Skills />
 

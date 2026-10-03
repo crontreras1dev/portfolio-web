@@ -7,3 +7,14 @@
   --color-button-bg: oklch(0.2735 0.0179 251.92);
   --color-border: oklch(0.3837 0.0179 254.74);
 };
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

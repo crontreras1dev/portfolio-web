@@ -7,8 +7,11 @@ export const projects = [
     id: 1,
     name: "FreelanceWeb;",
     image: freelancewebMockup,
-    status: "Featured",
-    description: "Página web sencilla de venta de páginas web. Internacionalización (español e inglés) y google calendar integrado para agendar citas.",
+    status: { en: "Featured", es: "Destacado" },
+    description: {
+      en: "Simple website for selling websites. Internationalized (Spanish and English) with Google Calendar integrated for booking appointments.",
+      es: "Página web sencilla de venta de páginas web. Internacionalización (español e inglés) y google calendar integrado para agendar citas.",
+    },
     tools: ["Astro", "Tailwindcss 4", "TypeScript"],
     github: "https://github.com/crontreras1dev/freelanceweb",
     page: "https://freelanceweb.work"
@@ -17,18 +20,24 @@ export const projects = [
     id: 2,
     name: "Gol de compra",
     image: golDeCompraMockup,
-    status: "Featured",
-    description: "Funel tipo crashing. Página web sencilla de venta de un e-book.",
+    status: { en: "Featured", es: "Destacado" },
+    description: {
+      en: "Crash-style sales funnel. Simple landing page for selling an e-book.",
+      es: "Funel tipo crashing. Página web sencilla de venta de un e-book.",
+    },
     tools: ["React", "Tailwindcss 4"],
     github: "https://github.com/crontreras1dev/gol-de-compra",
     page: "https://gol-de-compra.vercel.app/"
   },
   {
     id: 3,
-    name: "Catálogo Suprote",
+    name: { en: "Suprote Catalog", es: "Catálogo Suprote" },
     image: catalogoSuprote,
-    status: "Featured",
-    description: "Catálogo de suplementación deportiva con filtro por categoría",
+    status: { en: "Featured", es: "Destacado" },
+    description: {
+      en: "Sports supplement catalog with category filtering.",
+      es: "Catálogo de suplementación deportiva con filtro por categoría.",
+    },
     tools: ["React", "Tailwindcss 3", "TypeScript"],
     github: "https://github.com/crontreras1dev/catalogo-suprote",
     page: "https://catalogo-suprote-l5n7.vercel.app/"

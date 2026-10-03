@@ -16,11 +16,11 @@ export const translations = {
       closeMenu: "Close menu",
     },
     hero: {
-      title: "Cristian Contreras - Front-end Developer",
-      imageAlt: "Cristian Contreras",
+      greeting: "Hi, I'm",
+      name: "Cristian Contreras",
+      role: "Frontend Developer",
       intro: [
-        "Hi! I'm a Front-end Developer on my way to becoming Full-Stack.",
-        "I turn ideas into complete, smooth and well-built web products from start to finish, with a specialization in Front-end. My main stack revolves around React.js, Astro.js and Tailwind CSS 4, followed by Supabase, TypeScript and/or Sass, among others, depending on the project I'm working on. I'm constantly learning new skills.",
+        "I turn ideas into complete, smooth and well-built web products, specializing in the front-end with React.js, Astro.js and Tailwind CSS, on my way to becoming Full-Stack.",
         "I see code as a tool for solving real problems.",
       ],
       cv: "CV",
@@ -74,11 +74,11 @@ export const translations = {
       closeMenu: "Cerrar menú",
     },
     hero: {
-      title: "Cristian Contreras - Desarrollador front-end",
-      imageAlt: "Cristian Contreras",
+      greeting: "Hola, soy",
+      name: "Cristian Contreras",
+      role: "Desarrollador Frontend",
       intro: [
-        "¡Hola! Soy Desarrollador Front-end en proceso de convertirse en Full-Stack.",
-        "Transformo ideas en productos web completos, fluidos y bien construidos de principio a fin, pero especializado en Front-end. Mi stack principal se mueve entre React.js, Astro.js y Tailwind CSS 4; luego Supabase, TypeScript y/o Sass, entre otros dependiendo del proyecto en el que esté trabajando. Continuamente estoy aprendiendo nuevas habilidades.",
+        "Transformo ideas en productos web completos, fluidos y bien construidos, especializado en front-end con React.js, Astro.js y Tailwind CSS, en camino a convertirme en Full-Stack.",
         "Concibo el código como una herramienta para resolver problemas reales.",
       ],
       cv: "CV",

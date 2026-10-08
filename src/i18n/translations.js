@@ -42,7 +42,7 @@ export const translations = {
       },
     },
     experience: {
-      title: "Experience & Education",
+      title: "Experience",
       subtitle: "Projects and learning that shaped my path",
     },
     contact: {

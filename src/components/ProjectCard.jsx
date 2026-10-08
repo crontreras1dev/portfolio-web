@@ -17,7 +17,6 @@ const ExternalLinkIcon = () => (
 const ProjectCard = ({ project }) => {
   const { t, localize } = useLanguage();
   const name = localize(project.name);
-  const status = localize(project.status);
 
   return (
     <article className="group h-full flex flex-col border border-border rounded-lg bg-bg overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-text-secondary/50 hover:shadow-xl">
@@ -27,14 +26,6 @@ const ProjectCard = ({ project }) => {
           alt={ name }
           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
         />
-
-        {
-          status && (
-            <span className="absolute top-2 left-2 text-xs px-2 py-0.5 rounded-full bg-bg/80 border border-border text-text-secondary">
-              { status }
-            </span>
-          )
-        }
       </div>
 
       <div className="flex-1 p-4 flex flex-col gap-3">

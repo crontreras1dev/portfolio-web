@@ -7,7 +7,6 @@ export const projects = [
     id: 1,
     name: "FreelanceWeb;",
     image: freelancewebMockup,
-    status: { en: "Featured", es: "Destacado" },
     description: {
       en: "Simple website for selling websites. Internationalized (Spanish and English) with Google Calendar integrated for booking appointments.",
       es: "Página web sencilla de venta de páginas web. Internacionalización (español e inglés) y google calendar integrado para agendar citas.",
@@ -20,7 +19,6 @@ export const projects = [
     id: 2,
     name: "Gol de compra",
     image: golDeCompraMockup,
-    status: { en: "Featured", es: "Destacado" },
     description: {
       en: "Crash-style sales funnel. Simple landing page for selling an e-book.",
       es: "Funel tipo crashing. Página web sencilla de venta de un e-book.",
@@ -33,7 +31,6 @@ export const projects = [
     id: 3,
     name: { en: "Suprote Catalog", es: "Catálogo Suprote" },
     image: catalogoSuprote,
-    status: { en: "Featured", es: "Destacado" },
     description: {
       en: "Sports supplement catalog with category filtering.",
       es: "Catálogo de suplementación deportiva con filtro por categoría.",

@@ -8,13 +8,13 @@ const Experience = () => {
 
   return (
     <section id="experience" className="w-full flex flex-col justify-center items-center py-10">
-      <div className="w-full lg:w-2/3 py-5 flex flex-col justify-center gap-5">
+      <Reveal className="w-full lg:w-2/3 py-5 flex flex-col justify-center gap-5">
         <SectionHeading title={ t("experience.title") } subtitle={ t("experience.subtitle") } />
 
         <ol className="relative border-s border-border ms-3 flex flex-col gap-10">
           {
             experience.map(item => (
-              <Reveal as="li" key={ item.id } className="relative ps-8">
+              <li key={ item.id } className="relative ps-8">
                 <span aria-hidden="true" className="absolute -start-[7px] top-1.5 w-3 h-3 rounded-full bg-text-secondary ring-4 ring-bg" />
 
                 <p className="text-xs uppercase tracking-wider text-text-secondary">{ localize(item.type) }</p>
@@ -32,11 +32,11 @@ const Experience = () => {
                     ))
                   }
                 </ul>
-              </Reveal>
+              </li>
             ))
           }
         </ol>
-      </div>
+      </Reveal>
     </section>
   );
 };

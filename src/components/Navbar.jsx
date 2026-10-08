@@ -119,19 +119,20 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {
-        isOpen && (
-          <div id="mobile-menu" className="md:hidden -mx-5 px-5 pb-5 bg-bg border-b border-border">
-            <ul className="flex flex-col gap-4 pt-2 text-base">
-              { renderLinks(closeMenu) }
-            </ul>
+      <div
+        id="mobile-menu"
+        aria-hidden={ !isOpen }
+        inert={ !isOpen }
+        className={ `absolute left-0 right-0 top-full z-50 -mx-5 overflow-hidden bg-bg px-5 transition-[max-height,opacity,transform] duration-500 ease-in-out motion-reduce:transition-none md:hidden ${ isOpen ? "max-h-96 translate-y-0 border-b border-border opacity-100" : "pointer-events-none max-h-0 -translate-y-2 opacity-0" }` }
+      >
+        <ul className="flex flex-col gap-4 pt-2 pl-[10px] text-base">
+          { renderLinks(closeMenu) }
+        </ul>
 
-            <div className="mt-5 pt-4 border-t border-border">
-              <LanguageToggle />
-            </div>
-          </div>
-        )
-      }
+        <div className="mt-5 pb-5 pt-4 pl-[10px] border-t border-border">
+          <LanguageToggle />
+        </div>
+      </div>
     </header>
   );
 };

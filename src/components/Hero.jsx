@@ -4,7 +4,10 @@ import Reveal from "./Reveal";
 import { useLanguage } from "../i18n/LanguageContext";
 import { sendEmail } from "../utils/email";
 
-const CV_URL = "https://app.notion.com/p/Cristian-Contreras-Frontend-Developer-3ca0874829f780b28c16d8125ff5c89c?source=copy_link";
+const CV_URLS = {
+  en: "https://pointed-tree-535.notion.site/En-Cristian-Contreras-Frontend-Developer-3f30874829f78089a20cc15740c59932",
+  es: "https://pointed-tree-535.notion.site/Es-Cristian-Contreras-Frontend-Developer-3ca0874829f780b28c16d8125ff5c89c",
+};
 
 const SOCIALS = [
   { name: "GitHub", href: "https://github.com/crontreras1dev", icon: GitHub },
@@ -12,7 +15,7 @@ const SOCIALS = [
 ];
 
 const Hero = () => {
-  const { t } = useLanguage();
+  const { lang, t } = useLanguage();
 
   return (
     <section className="w-full flex justify-center py-12 md:py-20">
@@ -37,7 +40,7 @@ const Hero = () => {
           </button>
 
           <a
-            href={ CV_URL }
+            href={ CV_URLS[lang] }
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 text-sm md:text-base border border-border rounded-lg hover:bg-button-bg/50 transition-colors"
